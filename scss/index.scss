@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap");
+
+@import "./mixins";
+
+// variables
+$font-color: #dfdfdf;
+$background-color: #000;
+$primary: #4af626;
+$transition: 0.2s;
+$base-margin: 0.3em;
+$more-margin: $base-margin * 5;
+$base-padding: 9% 7%;
+
+body {
+  font-family: "Anonymous Pro", monospace;
+  background-color: $background-color;
+  color: $font-color;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: $font-color;
+}
+
+ul {
+  list-style: none;
+}
+
+// -------NAVBAR-----------------
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5% 5%;
+
+  .links-container {
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+    font-size: 1.1rem;
+
+    button {
+      @include btn;
+    }
+    .links {
+      padding: 0 3%;
+      color:gray;
+      &:hover {
+        color: $primary;
+        transition: $transition;
+      }
+    }
+  }
+}
+
+.nav-hr {
+  @include hr;
+}
+
+// -------------HERO-SECTION----------
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding: $base-padding;
+
+  .content {
+    flex: 3;
+
+
+    * {
+      margin-bottom: $base-margin;
+    }
+    >h1 {
+      @include heading;
+    }
+    li{
+        margin-top: $base-margin;
+    }
+  }
+  .image-container {
+    flex: 2;
+
+    > img {
+      width: 80%;
+      border-radius: 50%;
+      border: 3px solid $primary;
+    }
+  }
+}
+
+.hero-hr {
+  @include hr;
+  width: 300px;
+  margin: auto;
+}
+
+// --------------------GET-IN-TOUCH------------------
+
+.get-in-touch {
+    padding: $base-padding;
+
+    >h1{
+        @include heading
+    }
+
+    *{
+        margin-bottom: $base-margin;
+    }
+    >ul{
+        margin-top: $more-margin;
+        *{
+            margin-top: $base-margin;
+        }
+    }
+}

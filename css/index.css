@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap");
+body {
+  font-family: "Anonymous Pro", monospace;
+  background-color: #000;
+  color: #dfdfdf;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #dfdfdf;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5% 5%;
+}
+.navbar .links-container {
+  display: flex;
+  align-items: center;
+  padding: 0 2%;
+  font-size: 1.1rem;
+}
+.navbar .links-container button {
+  padding: 2% 4%;
+  background: none;
+  color: #dfdfdf;
+  border: #4af626 solid 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+.navbar .links-container button:hover {
+  border: 2px dotted #4af626;
+}
+.navbar .links-container .links {
+  padding: 0 3%;
+  color: gray;
+}
+.navbar .links-container .links:hover {
+  color: #4af626;
+  transition: 0.2s;
+}
+
+.nav-hr {
+  border: 0.5px solid #4af626;
+  box-shadow: 0px 10px 15px #4af626;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding: 9% 7%;
+}
+.hero-section .content {
+  flex: 3;
+}
+.hero-section .content * {
+  margin-bottom: 0.3em;
+}
+.hero-section .content > h1 {
+  color: #4af626;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+.hero-section .content li {
+  margin-top: 0.3em;
+}
+.hero-section .image-container {
+  flex: 2;
+}
+.hero-section .image-container > img {
+  width: 80%;
+  border-radius: 50%;
+  border: 3px solid #4af626;
+}
+
+.hero-hr {
+  border: 0.5px solid #4af626;
+  box-shadow: 0px 10px 15px #4af626;
+  width: 300px;
+  margin: auto;
+}
+
+.get-in-touch {
+  padding: 9% 7%;
+}
+.get-in-touch > h1 {
+  color: #4af626;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+.get-in-touch * {
+  margin-bottom: 0.3em;
+}
+.get-in-touch > ul {
+  margin-top: 1.5em;
+}
+.get-in-touch > ul * {
+  margin-top: 0.3em;
+}
