@@ -7,6 +7,12 @@ body {
   line-height: 1.4;
 }
 
+h1 {
+  color: #4af626;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
 p {
   font-size: 1.1rem;
 }
@@ -75,11 +81,6 @@ ul {
 .hero-section .content * {
   margin-bottom: 0.3em;
 }
-.hero-section .content > h1 {
-  color: #4af626;
-  font-size: 3.5rem;
-  font-weight: 400;
-}
 .hero-section .content li {
   margin-top: 0.3em;
 }
@@ -99,13 +100,12 @@ ul {
   margin: auto;
 }
 
-.get-in-touch {
+.projects {
   padding: 9% 7%;
 }
-.get-in-touch > h1 {
-  color: #4af626;
-  font-size: 3.5rem;
-  font-weight: 400;
+
+.get-in-touch {
+  padding: 9% 7%;
 }
 .get-in-touch * {
   margin-bottom: 0.3em;

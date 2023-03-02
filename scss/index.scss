@@ -19,8 +19,12 @@ body {
   line-height: 1.4;
 }
 
-p{
-    font-size: 1.1rem;
+h1 {
+  @include heading;
+}
+
+p {
+  font-size: 1.1rem;
 }
 
 * {
@@ -56,7 +60,7 @@ ul {
     }
     .links {
       padding: 0 3%;
-      color:gray;
+      color: gray;
       &:hover {
         color: $primary;
         transition: $transition;
@@ -79,15 +83,11 @@ ul {
   .content {
     flex: 3;
 
-
     * {
       margin-bottom: $base-margin;
     }
-    >h1 {
-      @include heading;
-    }
-    li{
-        margin-top: $base-margin;
+    li {
+      margin-top: $base-margin;
     }
   }
   .image-container {
@@ -107,22 +107,24 @@ ul {
   margin: auto;
 }
 
+
+// --------------------PROJECTS------------------
+.projects{
+  padding: $base-padding;
+}
+
 // --------------------GET-IN-TOUCH------------------
 
 .get-in-touch {
-    padding: $base-padding;
+  padding: $base-padding;
 
-    >h1{
-        @include heading
+  * {
+    margin-bottom: $base-margin;
+  }
+  > ul {
+    margin-top: $more-margin;
+    * {
+      margin-top: $base-margin;
     }
-
-    *{
-        margin-bottom: $base-margin;
-    }
-    >ul{
-        margin-top: $more-margin;
-        *{
-            margin-top: $base-margin;
-        }
-    }
+  }
 }
