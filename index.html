@@ -11,19 +11,25 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/index.css" />
-    <title>Rajat Sharma p</title>
+    <title>Rajat Sharma</title>
   </head>
   <body>
+    <!-- ---------------------ARROW-BTN----------------- -->
+    <div class="arrow-container">
+      <a href="#nav">      <i class="fa-solid fa-arrow-up"></i></a>
+
+    </div>
     <!-- ------------------------NAVBAR------------------ -->
     <div>
-      <nav class="navbar">
+      <nav id="nav" class="navbar">
         <div class="name-container">
-          <h1>Rajat Sharma</h1>
+          <h2>Rajat Sharma</h2>
         </div>
         <div class="links-container">
-          <a href="#" class="links">About</a>
-          <a href="#" class="links">Projects</a>
+          <a href="#about" class="links">About</a>
+          <a href="#projects" class="links">Projects</a>
           <a href="#touch-id" class="links">Contact</a>
           <button class="resume-btn">Resume</button>
         </div>
@@ -32,12 +38,12 @@
     </div>
 
     <!-- ----------------------------HERO-SECTION-------------------- -->
-    <section class="hero-section">
+    <section id="about" class="hero-section">
       <div class="content">
         <p>👋 Hi, my name is</p>
         <h1>Rajat Sharma</h1>
         <p>
-          I am a 2nd year college student pursuing bachelor's in computer
+          I am a 3rd year college student pursuing bachelor's in computer
           application. I enjoy making things for the internet with the help of
           internet_<br />
           <br />
@@ -57,12 +63,154 @@
     <hr class="hero-hr" />
 
     <!-- ----------------PROJECTS-SECTION---------------- -->
-    <section class="projects">
-        <h1>Projects</h1>
-        <div class="projects-container">
-          
+    <section id="projects" class="projects">
+      <h1>Projects</h1>
+
+      <div class="project-item">
+        <div class="project-img-container">
+          <img src="Images/weather.PNG" alt="" />
         </div>
+        <div class="project-content">
+          <a href="https://weatherown.netlify.app/" target="_blank">
+            <h1 class="project-heading">WeatherOwn</h1>
+          </a>
+          <p class="project-desc">
+            A Weather app made to get information about the weather of different
+            states. Weather can me seen either in Celsius or Fahrenheit.
+          </p>
+          <div class="tags-container">
+            <p>React</p>
+            <p>OpenWeather API</p>
+            <p>Scss</p>
+          </div>
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="https://weatherown.netlify.app/" target="_blank"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/rajat4984/Weatherown"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-content">
+          <a href="https://genuine-mochi-0a41a2.netlify.app/" target="_blank">
+            <h1 class="project-heading">Sputify</h1>
+          </a>
+          <p class="project-desc">
+            A Spotify UI clone made with material ui and react
+          </p>
+          <div class="tags-container">
+            <p>React</p>
+            <p>Material-ui</p>
+            <p>VS Code</p>
+          </div>
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a
+                  href="https://genuine-mochi-0a41a2.netlify.app/"
+                  target="_blank"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/rajat4984/Weatherown"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-img-container">
+          <img src="Images/Spotify.PNG" alt="spotify clone screenshot" />
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-img-container">
+          <img src="Images/gtd.PNG" alt="" />
+        </div>
+        <div class="project-content">
+          <a href="https://rajat4984.github.io/GTD-TO-DO/" target="_blank">
+            <h1 class="project-heading">Get things done</h1>
+          </a>
+          <p class="project-desc">
+            Get things done is a todo list that saves its data in local storage.
+            The user can categorize tasks in their specific projects.
+          </p>
+          <div class="tags-container">
+            <p>Javascript</p>
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="https://rajat4984.github.io/GTD-TO-DO/" target="_blank"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/rajat4984/GTD-TO-DO" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-content">
+          <a href="https://rajat4984.github.io/shopping/" target="_blank">
+            <h1 class="project-heading">
+              <i class="fa-solid fa-basketball-hoop"></i>Jordan
+            </h1>
+          </a>
+          <p class="project-desc">
+            Jordan is an e-commerce website with a landing page. The user can
+            add or remove Items from their cart
+          </p>
+          <div class="tags-container">
+            <p>React</p>
+            <p>VS code</p>
+            <p>CSS</p>
+          </div>
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="https://rajat4984.github.io/shopping/" target="_blank"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/rajat4984/shopping" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-img-container">
+          <img src="Images/jordan.PNG" alt="" />
+        </div>
+      </div>
     </section>
+
+    <hr class="hero-hr" />
 
     <!-- --------------------GET-IN-TOUCH---------------- -->
     <section class="get-in-touch" id="touch-id">
@@ -94,5 +242,18 @@
         </li>
       </ul>
     </section>
+
+    <!-- -----------------FOOTER------------------- -->
+    <hr class="nav-hr" />
+    <div class="footer">
+      <div class="footer-text-container">
+        <p>
+          Made by Rajat
+          <a href="https://github.com/rajat4984" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </p>
+      </div>
+    </div>
   </body>
 </html>

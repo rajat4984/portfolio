@@ -18,8 +18,8 @@
   box-shadow: 0px 10px 15px $primary;
 }
 
-@mixin heading{
-  color: $primary;
-  font-size: 3.5rem;
+@mixin heading($font-size:3.5rem,$color:$primary){
+  color: $color;
+  font-size: $font-size;
   font-weight: 400;
 }

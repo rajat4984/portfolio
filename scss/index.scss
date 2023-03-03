@@ -6,10 +6,18 @@
 $font-color: #dfdfdf;
 $background-color: #000;
 $primary: #4af626;
-$transition: 0.2s;
-$base-margin: 0.3em;
-$more-margin: $base-margin * 5;
+$transition: 0.4s;
+$base-margin: 0.5em;
+$more-margin: $base-margin * 4;
 $base-padding: 9% 7%;
+
+%tags-layout {
+  padding: .5em 1em;
+  margin: $base-margin $base-margin $base-margin 0;
+  background-color: #272727c4;
+  border-radius: 50px;
+  font-size: 1rem;
+}
 
 body {
   font-family: "Anonymous Pro", monospace;
@@ -17,10 +25,6 @@ body {
   color: $font-color;
   box-sizing: border-box;
   line-height: 1.4;
-}
-
-h1 {
-  @include heading;
 }
 
 p {
@@ -42,12 +46,43 @@ ul {
   list-style: none;
 }
 
+
+/* width */
+::-webkit-scrollbar {
+  width:5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $background-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary;
+}
+
+
+// ---------------------ARROW-BTN------------------------
+.arrow-container {
+  background-color: #272727c4;
+  padding: 1em;
+  position: fixed;
+  border-radius: 5px;
+  top: 85%;
+  left: 95%;
+  i {
+    font-size: 2rem;
+    color: $primary;
+  }
+}
+
 // -------NAVBAR-----------------
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5% 5%;
+  padding: 2.5% 4%;
 
   .links-container {
     display: flex;
@@ -83,6 +118,9 @@ ul {
   .content {
     flex: 3;
 
+    h1 {
+      @include heading;
+    }
     * {
       margin-bottom: $base-margin;
     }
@@ -107,24 +145,95 @@ ul {
   margin: auto;
 }
 
-
 // --------------------PROJECTS------------------
-.projects{
+.projects {
+  h1 {
+    @include heading;
+    margin-bottom: 1em;
+  }
   padding: $base-padding;
+}
+
+.project-item {
+  margin-bottom: $more-margin * 5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    @include heading(1.5rem, $font-color);
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .project-img-container {
+    flex: 1;
+    img {
+      width: 95%;
+      border-radius: 10px;
+      transition: $transition;
+      box-shadow: 2px 2px 10px $font-color;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .project-content {
+    flex: 0.7;
+    padding: 0 1em;
+    .project-desc {
+      margin: $base-margin 0;
+      text-align: left;
+    }
+    .tags-container {
+      display: flex;
+
+      p {
+        @extend %tags-layout;
+      }
+    }
+    .links {
+      display: flex;
+      margin-top: $base-margin;
+      li {
+        @extend %tags-layout;
+      }
+    }
+  }
 }
 
 // --------------------GET-IN-TOUCH------------------
 
 .get-in-touch {
   padding: $base-padding;
-
+  h1 {
+    @include heading;
+  }
   * {
     margin-bottom: $base-margin;
   }
   > ul {
-    margin-top: $more-margin;
+    margin-top: $base-margin;
     * {
       margin-top: $base-margin;
+      transition: 0.2s;
+      &:hover {
+        color: $primary;
+      }
     }
   }
+}
+
+// ---------------------FOOTER-------------------
+
+.footer {
+  text-align: center;
+  padding: 2% 0;
 }

@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap");
+.project-item .project-content .links li, .project-item .project-content .tags-container p {
+  padding: 0.5em 1em;
+  margin: 0.5em 0.5em 0.5em 0;
+  background-color: rgba(39, 39, 39, 0.768627451);
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
 body {
   font-family: "Anonymous Pro", monospace;
   background-color: #000;
   color: #dfdfdf;
   box-sizing: border-box;
   line-height: 1.4;
-}
-
-h1 {
-  color: #4af626;
-  font-size: 3.5rem;
-  font-weight: 400;
 }
 
 p {
@@ -32,11 +34,39 @@ ul {
   list-style: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4af626;
+}
+
+.arrow-container {
+  background-color: rgba(39, 39, 39, 0.768627451);
+  padding: 1em;
+  position: fixed;
+  border-radius: 5px;
+  top: 85%;
+  left: 95%;
+}
+.arrow-container i {
+  font-size: 2rem;
+  color: #4af626;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5% 5%;
+  padding: 2.5% 4%;
 }
 .navbar .links-container {
   display: flex;
@@ -62,7 +92,7 @@ ul {
 }
 .navbar .links-container .links:hover {
   color: #4af626;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 .nav-hr {
@@ -78,11 +108,16 @@ ul {
 .hero-section .content {
   flex: 3;
 }
+.hero-section .content h1 {
+  color: #4af626;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
 .hero-section .content * {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.5em;
 }
 .hero-section .content li {
-  margin-top: 0.3em;
+  margin-top: 0.5em;
 }
 .hero-section .image-container {
   flex: 2;
@@ -103,16 +138,81 @@ ul {
 .projects {
   padding: 9% 7%;
 }
+.projects h1 {
+  color: #4af626;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
 
+.project-item {
+  margin-bottom: 10em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-item h1 {
+  color: #dfdfdf;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.project-item h1:hover {
+  color: #4af626;
+}
+.project-item .project-img-container {
+  flex: 1;
+}
+.project-item .project-img-container img {
+  width: 95%;
+  border-radius: 10px;
+  transition: 0.4s;
+  box-shadow: 2px 2px 10px #dfdfdf;
+  cursor: pointer;
+}
+.project-item .project-img-container img:hover {
+  transform: scale(1.1);
+}
+.project-item .project-content {
+  flex: 0.7;
+  padding: 0 1em;
+}
+.project-item .project-content .project-desc {
+  margin: 0.5em 0;
+  text-align: left;
+}
+.project-item .project-content .tags-container {
+  display: flex;
+}
+.project-item .project-content .links {
+  display: flex;
+  margin-top: 0.5em;
+}
 .get-in-touch {
   padding: 9% 7%;
 }
+.get-in-touch h1 {
+  color: #4af626;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
 .get-in-touch * {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.5em;
 }
 .get-in-touch > ul {
-  margin-top: 1.5em;
+  margin-top: 0.5em;
 }
 .get-in-touch > ul * {
-  margin-top: 0.3em;
+  margin-top: 0.5em;
+  transition: 0.2s;
+}
+.get-in-touch > ul *:hover {
+  color: #4af626;
+}
+
+.footer {
+  text-align: center;
+  padding: 2% 0;
 }
