@@ -1,0 +1,59 @@
+// variables
+$font-color: #dfdfdf;
+$background-color: #000;
+$primary: #4af626;
+$transition: 0.4s;
+$base-margin: 0.5em;
+$more-margin: $base-margin * 4;
+$base-padding: 9% 7%;
+
+%tags-layout {
+  padding: .5em 1em;
+  margin: $base-margin $base-margin $base-margin 0;
+  background-color: #272727c4;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Anonymous Pro", monospace;
+  background-color: $background-color;
+  color: $font-color;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: $font-color;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width:5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $background-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary;
+}

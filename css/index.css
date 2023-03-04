@@ -106,6 +106,7 @@ ul {
   padding: 9% 7%;
 }
 .hero-section .content {
+  padding-right: 1em;
   flex: 3;
 }
 .hero-section .content h1 {
